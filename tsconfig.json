@@ -1,16 +1,13 @@
 {
     "compilerOptions": {
-      "declaration": true,
-      "strict": true,
-      "noImplicitAny": true,
-      "removeComments": true,
-      "preserveConstEnums": true,
-      "outDir": "./build",
-      "sourceMap": false,
-      "typeRoots": [ "./types", "./node_modules/@types"],
-      "lib": [
-        "dom"
-      ]
+        "rootDir": "./src",
+        "declaration": true,
+        "strict": true,
+        "noImplicitAny": true,
+        "removeComments": true,
+        "preserveConstEnums": true,
+        "outDir": "./build",
+        "sourceMap": false
     },
     "include": [
         "src/*"

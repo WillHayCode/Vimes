@@ -1,18 +1,20 @@
 {
-  "name": "virtual-tabletop",
+  "name": "vimes",
   "version": "0.0.1",
   "description": "A virtual tabletop built in Lipwig",
   "main": "index.js",
   "dependencies": {
     "typescript": "^4.0.2",
-    "lipwigjs": "1.2.1"
+    "lipwigjs": "1.2.3",
+    "lipwig-chat": "0.0.3"
   },
   "devDependencies": {
     "webpack": "^4.44.1",
     "webpack-cli": "^3.3.12"
   },
   "scripts": {
-    "webpack": "webpack build/VirtualTabletop.js -o js/main.js --mode development"
+    "build": "tsc && npm run webpack",
+    "webpack": "webpack build/VirtualTabletop.js -o assets/js/main.js --mode development"
   },
   "repository": {
     "type": "git",

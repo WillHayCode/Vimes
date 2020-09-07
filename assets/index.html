@@ -1,14 +1,15 @@
 <html>
   <head>
     <title>Virtual Tabletop</title>
-    <script src="js/main.js"></script>
-    <script defer>
-      const vt = new VirtualTabletop();
-    </script>
+    <script src="js/main.js" defer></script>
     <link rel="stylesheet" href="styles.css"/>
   </head>
   <body>
     <div id="portal" class="page">
+      <p>
+        <h2>Name</h2>
+        <input type="text" id="txtName"/>
+      </p>
       <p>
         <h2>Host Game</h2>
         <input type="button" id="btnHost" value="Host Game"/>
@@ -22,6 +23,12 @@
       <h1>Loading...</h1>
     </div>
     <div id="content" class="hidden page">
+      <div id="chatWindow">
+        <div id="chatLog"></div>
+        <div id="chatBox">
+          <input type="text" id="txtNewMessage"/>
+          <input type="button" id="btnSendMessage" value="Send"/>
+      </div>
     </div>
   </body>
 </html>
