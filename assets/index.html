@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title>Virtual Tabletop</title>
+    <script src="js/main.js"></script>
+    <script defer>
+      const vt = new VirtualTabletop();
+    </script>
+    <link rel="stylesheet" href="styles.css"/>
+  </head>
+  <body>
+    <div id="portal" class="page">
+      <p>
+        <h2>Host Game</h2>
+        <input type="button" id="btnHost" value="Host Game"/>
+      </p>
+      <p>
+        <h2>Join Game</h2>
+        Code: <input type="text" id="txtCode"/> <br/>
+        <input type="button" id="btnJoin" value="Join Game"/>
+    </div>
+    <div id="loading" class="hidden page">
+      <h1>Loading...</h1>
+    </div>
+    <div id="content" class="hidden page">
+    </div>
+  </body>
+</html>

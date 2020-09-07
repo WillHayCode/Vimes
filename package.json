@@ -1,0 +1,27 @@
+{
+  "name": "virtual-tabletop",
+  "version": "0.0.1",
+  "description": "A virtual tabletop built in Lipwig",
+  "main": "index.js",
+  "dependencies": {
+    "typescript": "^4.0.2",
+    "lipwigjs": "1.2.1"
+  },
+  "devDependencies": {
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "webpack": "webpack build/VirtualTabletop.js -o js/main.js --mode development"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WillHayCode/Virtual-Tabletop.git"
+  },
+  "author": "William Hayward <WillHayCode@gmail.com> (https://WillHayCode.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WillHayCode/Virtual-Tabletop/issues"
+  },
+  "homepage": "https://github.com/WillHayCode/Virtual-Tabletop#readme"
+}
