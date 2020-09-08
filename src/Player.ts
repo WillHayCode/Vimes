@@ -1,5 +1,6 @@
 import { LipwigClient, LipwigLocalClient } from 'lipwigjs';
 import { ChatClient } from 'lipwig-chat';
+
 export class Player {
   private chatClient: typeof ChatClient; 
   constructor(client: LipwigClient | LipwigLocalClient, username: string) {

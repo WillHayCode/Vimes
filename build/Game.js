@@ -9,7 +9,19 @@ var Game = (function () {
         setTimeout(function () {
             _this.chatHost.sendToAll('Room Code', code);
         }, 10);
+        this.setChatListeners();
     }
+    Game.prototype.setChatListeners = function () {
+        this.chatHost.on(/^\//, function (user, message) {
+            var roll = /^\/r(oll)? ?/;
+            if (message.match(roll)) {
+                var components = message.split(roll);
+                var total = components[components.length - 1];
+                console.log(total);
+            }
+        }, true);
+    };
+    ;
     return Game;
 }());
 exports.Game = Game;

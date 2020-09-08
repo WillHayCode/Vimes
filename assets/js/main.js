@@ -94,7 +94,7 @@
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-eval("\nexports.__esModule = true;\nexports.Game = void 0;\nvar lipwig_chat_1 = __webpack_require__(/*! lipwig-chat */ \"./node_modules/lipwig-chat/lib/LipwigChat.js\");\nvar Game = (function () {\n    function Game(host, code) {\n        var _this = this;\n        this.chatHost = new lipwig_chat_1.ChatHost(host);\n        setTimeout(function () {\n            _this.chatHost.sendToAll('Room Code', code);\n        }, 10);\n    }\n    return Game;\n}());\nexports.Game = Game;\n\n\n//# sourceURL=webpack:///./build/Game.js?");
+eval("\nexports.__esModule = true;\nexports.Game = void 0;\nvar lipwig_chat_1 = __webpack_require__(/*! lipwig-chat */ \"./node_modules/lipwig-chat/lib/LipwigChat.js\");\nvar Game = (function () {\n    function Game(host, code) {\n        var _this = this;\n        this.chatHost = new lipwig_chat_1.ChatHost(host);\n        setTimeout(function () {\n            _this.chatHost.sendToAll('Room Code', code);\n        }, 10);\n        this.setChatListeners();\n    }\n    Game.prototype.setChatListeners = function () {\n        this.chatHost.on(/^\\//, function (user, message) {\n            var roll = /^\\/r(oll)? ?/;\n            if (message.match(roll)) {\n                var components = message.split(roll);\n                var total = components[components.length - 1];\n                console.log(total);\n            }\n        }, true);\n    };\n    ;\n    return Game;\n}());\nexports.Game = Game;\n\n\n//# sourceURL=webpack:///./build/Game.js?");
 
 /***/ }),
 
