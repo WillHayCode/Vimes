@@ -1,5 +1,4 @@
 export declare class VirtualTabletop {
-    private chatClient;
+    private game;
     constructor();
-    private setChatListeners;
 }
