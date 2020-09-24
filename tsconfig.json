@@ -7,7 +7,8 @@
         "removeComments": true,
         "preserveConstEnums": true,
         "outDir": "./build",
-        "sourceMap": false
+        "sourceMap": false,
+        "target": "es6"
     },
     "include": [
         "src/*"

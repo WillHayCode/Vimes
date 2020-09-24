@@ -10,3 +10,12 @@
   width: 100%;
 }
 
+#chatWindow {
+  position: absolute;
+  width: 25%;
+  height: 50%;
+  bottom: 0;
+  right: 0;
+  border: thick black solid;
+  overflow-y: scroll;
+}

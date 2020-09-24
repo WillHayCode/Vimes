@@ -7,7 +7,7 @@ import { LipwigClient, LipwigHost } from 'lipwigjs';
 import { Game } from './Game';
 import { Player } from './Player';
 
-export class VirtualTabletop {
+export class Vimes {
   private game: Game | undefined;
   constructor() {
     this.game = undefined;
@@ -55,4 +55,4 @@ export class VirtualTabletop {
   }
 }
 
-new VirtualTabletop();
+new Vimes();
